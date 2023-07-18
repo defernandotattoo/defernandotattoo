@@ -1,0 +1,255 @@
+body{
+    background-image: url(../imagens/Fundo/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Poppins', sans-serif;
+    color: #d3cbf1;
+    border: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: #303355cc;
+    width: 420px;
+    border: 1px solid #411ba700;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img{
+    border-radius: 10%;
+    border: 2px solid #911bda62;    
+    width: 38%;
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 26px;
+    color: #46ffe6;
+}
+
+.cartao .minhas-informacoes .local{
+    font-size: 20px;
+    color: #ffffff6e;
+}
+
+.cartao .minhas-informacoes .contato{
+    font-size: 20px;
+    color: #ffffff6e;
+}
+
+.cartao .minhas-informacoes .aroba{
+    font-size: 18px;
+    color: #ffffff6e;
+}
+
+.cartao .conteudo{
+    margin-top: 15px;
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.9s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 25%;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #26262698;
+}
+
+.cartao .informacoes-abas{
+    background-color: #2626269d;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #b92c2c9d;
+}
+
+.informacoes-abas .informacao{
+    min-height: 60px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 380px;
+    overflow-y: auto;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao .link span{
+    color: #00ff0d;
+}
+
+.informacoes-abas .descricao .link2 span{
+    color: #ff0000;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 380px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{    
+    width: 250px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .curriculo{
+    background-color: #0fbc09;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.redes-sociais .curriculoPdf{
+    background-color: #0fbc09;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+      
+}
+.redes-sociais .linkedin{
+    background-color: #4da7f0;
+    border-radius: 5px;
+}
+.linkedin img{
+    width: 50%;
+}
+.redes-sociais .tiktok{
+    background-color: #4744d6;
+    border-radius: 5px;
+}
+.tiktok img{
+    width: 68%;
+}
+.redes-sociais .WhatsApp{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.WhatsApp img {
+    width: 50%;  
+}  
+.redes-sociais .instagram{
+    background-color: #911bda;
+    border-radius: 5px;
+}
+.instagram img{
+    width: 60%; 
+}
+.redes-sociais .facebook{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.facebook img{
+    width: 30%;
+}
+.redes-sociais .twitter{
+    background-color: #36b9ff;
+    border-radius: 5px;
+}
+.twitter img{
+    width: 60%; 
+}
+.redes-sociais .youtube{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.youtube img{
+    width: 75%; 
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .galeria img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+  }
+  .galeria-lightbox img {
+    cursor: pointer;
+  }
+  .imagem-ampliada {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  .imagem-ampliada img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 50px;
+    box-shadow: 0 0 15px #000;
+    border-radius: 5px;
+  }
+  .galeria-lightbox img:hover {
+    opacity: 0.7;
+  }
+  
+  .galeria-lightbox img:active {
+    opacity: 1;
+  }
+  
+  .galeria-lightbox img:active + .imagem-ampliada {
+    display: block;
+  }
+
+  .site-info {
+    background-color: #ff7f50;
+  }
+  
