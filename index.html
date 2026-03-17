@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@defernandotattoo</title>
-  <link rel="icon" type="image/png" href="./src/imagens/Icons/coracao.gif">
-  <link href="https://fonts.googleapis.com/css2?family= Cherry+Bomb+One & display =swap" rel="stylesheet">
+  <meta name="description" content="Portfólio de Dê Fernando, tatuador especialista em tatuagens blackwork geek com foco em anime, mangás, games e HQs em Belo Horizonte - MG.">
+  <meta name="author" content="Prisley Henrique">
+  <meta name="theme-color" content="#111111">
+
+  <title>Dê Fernando | Tattoo Artist</title>
+
+  <link rel="icon" type="image/gif" href="./src/imagens/Icons/coracao.gif">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/estilos.css">
   <link rel="stylesheet" href="./src/css/rolagem.css">
@@ -14,145 +22,350 @@
 </head>
 
 <body>
-  <main class="cartao">
-    <div class="minhas-informacoes">
-      <img src="./src/imagens/Perfil/foto-perfil.jpg" alt="foto de perfil">
-      <h1 class="nome">Dê Fernando</h1>
-      <h2 class="local">Belo Horizonte – MG</h2>
-      <h3 class="contato">(31) 97574-8649</h3>
-      <h4 class="aroba">@defernandotattoo</h4>
-    </div>
-    <div class="conteudo">
-      <ul class="abas">
-        <li class="aba selecionado" id="minhas-redes">
-          <img src="./src/imagens/Icons/coracao.gif" alt="ícone de redes sociais">
-        </li>
-        <li class="aba" id="sobre-mim">
-          <img src="./src/imagens/Icons/sobre.gif" alt="ícone de sobre mim">
-        </li>
-        <li class="aba" id="minhas-conquistas">
-          <img src="./src/imagens/Icons/starc.gif" alt="icone das Conquistas">
-        </li>
-        <li class="aba" id="About">
-          <img src="./src/imagens/Icons/about.gif" alt="icone about">
-        </li>
-      </ul>
-      <div class="informacoes-abas">
-        <div class="informacao selecionado" id="informacao-sobre-mim">
-          <h3 class="sub-titulo">Sobre</h3>
-          <div class="descricao">
-            <p>Me chamo Dênith Fernando  <p>
-              </p> e sou tatuador especialista em tatuagens Blackwork geek, com mais foco em ANIME a mais de 4 anos.<p>
-             </p> Sou apaixonado por esse universo de personagens de Animes/Mangás, Games e HQs. <p>
-              </p> Meu sonho é alcançar o máximo de pessoas no mundo e levar exclusividade com minha arte e meu estilo de tatuagem. <p>
-              </p> Gosto de desenvolver projetos grandes e personalizados para cada cliente.</p>
-          </div>
+  <div class="page-background" aria-hidden="true"></div>
+  <div class="page-overlay" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="profile-card" aria-label="Portfólio de Dê Fernando">
+      <header class="profile-hero">
+        <div class="profile-image-wrapper">
+          <img
+            src="./src/imagens/Perfil/foto-perfil.jpg"
+            alt="Foto de perfil de Dê Fernando"
+            class="profile-image"
+          >
         </div>
-        <div class="informacao" id="informacao-minhas-redes">
-          <h3 class="sub-titulo">Minhas redes</h3>
-          <ul class="redes-sociais">
+
+        <div class="profile-info">
+          <span class="profile-badge">Tattoo Artist</span>
+
+          <h1 class="profile-name">Dê Fernando</h1>
+
+          <p class="profile-location">Belo Horizonte — MG</p>
+
+          <ul class="profile-meta" aria-label="Informações de contato">
             <li>
-              <a href="https://api.whatsapp.com/message/BOSH5R7FABGQA1?autoload=1&app_absent=0" target="_blank" class="WhatsApp">
-                <img src="./src/imagens/Icons/WhatsApp.png" alt="whatsapp">
+              <a href="tel:+5531975748649" class="profile-meta-link">
+                (31) 97574-8649
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/defernandotattoo" target="_blank" class="instagram">
-                <img src="./src/imagens/Icons/Instagram wite.png" alt="instagram">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@defernandotattoo" target="_blank" class="tiktok">
-                <img src="./src/imagens/Icons/TikTok wite.png" alt="tiktok">
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/defernandotatto" target="_blank" class="twitter">
-                <img src="./src/imagens/Icons/twitter.png" alt="twitter">
-              </a>
-            </li>
-            <li>
-              <a href="https://youtube.com/@tatuandoanimes" target="_blank" class="youtube">
-                <img src="./src/imagens/Icons/YouTube.png" alt="twitter">
+              <a
+                href="https://www.instagram.com/defernandotattoo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="profile-meta-link"
+              >
+                @defernandotattoo
               </a>
             </li>
           </ul>
-        </div>
-        <div class="informacao" id="informacao-minhas-conquistas">
-          <h3 class="sub-titulo">Algumas das minhas Tattos</h3>
-          <div class="galeria">
-            <a href="./src/imagens/fotos/Foto (1).jpg" data-lightbox="galeria">
-              <img src="./src/imagens/fotos/mini/Foto (1).jpg" alt="Foto 1">
+
+          <p class="profile-summary">
+            Tatuador especialista em tatuagens geek com foco em anime, mangás, games e HQs.
+            Projetos exclusivos e personalizados, autorais com identidade visual forte.
+            Atua em Belo Horizonte - Minas Gerais - Brasil há mais de 8 anos.
+
+            <p class="profile-summary">
+              Tattoo artist specializing in geek-themed tattoos, with a focus on anime, manga, video games, and comic books.
+            Exclusive, custom designs with a strong visual identity.
+            Serving clients in Belo Horizonte, Minas Gerais, Brazil, for over 8 years.</p>
+          </p>
+
+          <div class="profile-actions">
+            <a
+              href="https://api.whatsapp.com/message/BOSH5R7FABGQA1?autoload=1&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Faça um orçamento
             </a>
-            <a href="./src/imagens/fotos/Foto (2).jpg" data-lightbox="galeria">
-              <img src="./src/imagens/fotos/mini/Foto (2).jpg" alt="Foto 2">
-            </a>
-              <a href="./src/imagens/fotos/Foto (3).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (3).jpg" alt="Foto 3">
-              </a>
-              <a href="./src/imagens/fotos/Foto (4).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (4).jpg" alt="Foto 4">
-              </a>
-              <a href="./src/imagens/fotos/Foto (5).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (5).jpg" alt="Foto 5">
-              </a>
-              <a href="./src/imagens/fotos/Foto (6).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (6).jpg" alt="Foto 6">
-              </a>
-              <a href="./src/imagens/fotos/Foto (7).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (7).jpg" alt="Foto 7">
-              </a>
-              <a href="./src/imagens/fotos/Foto (8).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (8).jpg" alt="Foto 8">
-              </a>
-              <a href="./src/imagens/fotos/Foto (9).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (9).jpg" alt="Foto 9">
-              </a>
-              <a href="./src/imagens/fotos/Foto (10).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (10).jpg" alt="Foto 10">
-              </a>
-              <a href="./src/imagens/fotos/Foto (11).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (11).jpg" alt="Foto 11">
-              </a>
-              <a href="./src/imagens/fotos/Foto (12).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (12).jpg" alt="Foto 12">
-              </a>
-              <a href="./src/imagens/fotos/Foto (13).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (13).jpg" alt="Foto 13">
-              </a>
-              <a href="./src/imagens/fotos/Foto (14).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (14).jpg" alt="Foto 14">
-              </a>
-              <a href="./src/imagens/fotos/Foto (15).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (15).jpg" alt="Foto 15">
-              </a>
-              <a href="./src/imagens/fotos/Foto (16).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (16).jpg" alt="Foto 16">
-              </a>
-              <a href="./src/imagens/fotos/Foto (17).jpg" data-lightbox="galeria">
-                <img src="./src/imagens/fotos/mini/Foto (17).jpg" alt="Foto 17">
-              </a>
+
+            <a
+              href="https://www.instagram.com/defernandotattoo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              Ver Instagram
             </a>
           </div>
         </div>
-        <div class="informacao" id="informacao-About">
-          <h3 class="sub-titulo">Sobre a página</h3>
-          <div class="descricao">
-            <p>Essa página foi desenvolvida por <p> Prisley Henrique 🤓</p> Especialista em construir aplicações que elevam a interação dos usuários. Atualmente, estou cursando Engenharia de Software e trabalho como desenvolvedor na Seção de Patrimônio da UFMG, onde liderei projetos como a criação de um sistema de verificação patrimonial abrangendo a consulta de quase 40 mil bens, resultando em melhorias significativas na gestão de ativos.
-               Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em  <a class="link2" href="https://wa.me//5531973426802?text=Olá!"><span class="link">contato comigo!</span></a></p>
-        </div>
-        </div>
-      </div>
-    </main>
-    <script src="./src/js/index.js"></script>
-    <script src="./src/js/jQuery.js"></script>
-    <script src="./src/js/lightbox.js"></script>
-    <script>
-      lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-      });
-    </script>
-  </body>
+      </header>
 
-  </html>
+      <nav class="tabs-nav" aria-label="Seções do portfólio">
+        <button class="tab-button" type="button" data-tab="redes">
+          <img src="./src/imagens/Icons/coracao.gif" alt="" aria-hidden="true">
+          <span>Redes</span>
+        </button>
+
+        <button class="tab-button" type="button" data-tab="sobre">
+          <img src="./src/imagens/Icons/sobre.gif" alt="" aria-hidden="true">
+          <span>Sobre</span>
+        </button>
+
+        <button class="tab-button active" type="button" data-tab="galeria">
+          <img src="./src/imagens/Icons/starc.gif" alt="" aria-hidden="true">
+          <span>Galeria</span>
+        </button>
+
+        <button class="tab-button" type="button" data-tab="pagina">
+          <img src="./src/imagens/Icons/about.gif" alt="" aria-hidden="true">
+          <span>Créditos</span>
+        </button>
+      </nav>
+
+      <section class="tabs-content">
+        <article class="tab-panel" id="tab-redes" aria-labelledby="redes">
+          <div class="section-header">
+            <p class="section-kicker">Conexões</p>
+            <h2 class="section-title">Minhas redes</h2>
+            <p class="section-text">
+              Escolha a plataforma que preferir para acompanhar meu trabalho, entrar em contato
+              ou solicitar um orçamento.
+            </p>
+          </div>
+
+          <div class="social-grid">
+            <a
+              href="https://api.whatsapp.com/message/BOSH5R7FABGQA1?autoload=1&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card social-whatsapp"
+              aria-label="Abrir WhatsApp"
+            >
+              <div class="social-icon">
+                <img src="./src/imagens/Icons/WhatsApp.png" alt="WhatsApp">
+              </div>
+              <div class="social-content">
+                <strong>WhatsApp</strong>
+                <span>Atendimento e orçamento</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/defernandotattoo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card social-instagram"
+              aria-label="Abrir Instagram"
+            >
+              <div class="social-icon">
+                <img src="./src/imagens/Icons/Instagram wite.png" alt="Instagram">
+              </div>
+              <div class="social-content">
+                <strong>Instagram</strong>
+                <span>Portfólio e novidades</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@defernandotattoo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card social-tiktok"
+              aria-label="Abrir TikTok"
+            >
+              <div class="social-icon">
+                <img src="./src/imagens/Icons/TikTok wite.png" alt="TikTok">
+              </div>
+              <div class="social-content">
+                <strong>TikTok</strong>
+                <span>Vídeos e bastidores</span>
+              </div>
+            </a>
+
+            <a
+              href="https://twitter.com/defernandotatto"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card social-twitter"
+              aria-label="Abrir Twitter"
+            >
+              <div class="social-icon">
+                <img src="./src/imagens/Icons/twitter.png" alt="Twitter">
+              </div>
+              <div class="social-content">
+                <strong>Twitter</strong>
+                <span>Atualizações rápidas</span>
+              </div>
+            </a>
+
+            <a
+              href="https://youtube.com/@tatuandoanimes"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-card social-youtube"
+              aria-label="Abrir YouTube"
+            >
+              <div class="social-icon">
+                <img src="./src/imagens/Icons/YouTube.png" alt="YouTube">
+              </div>
+              <div class="social-content">
+                <strong>YouTube</strong>
+                <span>Conteúdo em vídeo</span>
+              </div>
+            </a>
+          </div>
+        </article>
+
+        <article class="tab-panel" id="tab-sobre" aria-labelledby="sobre">
+          <div class="section-header">
+            <p class="section-kicker">Identidade</p>
+            <h2 class="section-title">Sobre meu trabalho</h2>
+          </div>
+
+          <div class="content-card">
+            <p>
+              Me chamo Dênith Fernando e sou tatuador especialista em tatuagens geek,
+              com foco em anime, atuando há mais de 8 anos.
+            </p>
+
+            <p>
+              Sou apaixonado pelo universo de personagens de animes, mangás, games e HQs, e
+              transformo essa referência em projetos autorais, marcantes e personalizados.
+            </p>
+
+            <p>
+              Meu objetivo é levar exclusividade para o mundo, identidade e expressão através da arte,
+              desenvolvendo tatuagens que dialogam com a história, o estilo e a ideia de cada cliente.
+            </p>
+
+            <p>
+              Tenho preferência por projetos maiores e personalizados, pensados com atenção à
+              composição, leitura visual, contraste e impacto estético.
+            </p>
+          </div>
+        </article>
+
+        <article class="tab-panel active" id="tab-galeria" aria-labelledby="galeria">
+          <div class="section-header">
+            <p class="section-kicker">Portfólio</p>
+            <h2 class="section-title">Algumas das minhas tattoos</h2>
+            <p class="section-text">
+              Uma seleção de trabalhos para apresentar meu estilo, acabamento e direção artística.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <a href="./src/imagens/fotos/Foto(1).jpeg" data-lightbox="galeria" data-title="Trabalho 1" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(1).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 1" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(2).jpeg" data-lightbox="galeria" data-title="Trabalho 2" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(2).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 2" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(3).jpeg" data-lightbox="galeria" data-title="Trabalho 3" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(3).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 3" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(4).jpeg" data-lightbox="galeria" data-title="Trabalho 4" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(4).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 4" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(5).jpeg" data-lightbox="galeria" data-title="Trabalho 5" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(5).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 5" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(6).jpeg" data-lightbox="galeria" data-title="Trabalho 6" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(6).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 6" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(7).jpeg" data-lightbox="galeria" data-title="Trabalho 7" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(7).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 7" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(8).jpeg" data-lightbox="galeria" data-title="Trabalho 8" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(8).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 8" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(9).jpeg" data-lightbox="galeria" data-title="Trabalho 9" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(9).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 9" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(10).jpeg" data-lightbox="galeria" data-title="Trabalho 10" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(10).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 10" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(11).jpeg" data-lightbox="galeria" data-title="Trabalho 11" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(11).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 11" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(12).jpeg" data-lightbox="galeria" data-title="Trabalho 12" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(12).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 12" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(13).jpeg" data-lightbox="galeria" data-title="Trabalho 13" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(13).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 13" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(14).jpeg" data-lightbox="galeria" data-title="Trabalho 14" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(14).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 14" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(15).jpeg" data-lightbox="galeria" data-title="Trabalho 15" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(15).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 15" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(16).jpeg" data-lightbox="galeria" data-title="Trabalho 16" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(16).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 16" loading="lazy">
+            </a>
+
+            <a href="./src/imagens/fotos/Foto(17).jpeg" data-lightbox="galeria" data-title="Trabalho 17" class="gallery-item">
+              <img src="./src/imagens/fotos/mini/Foto(17).jpeg" alt="Tatuagem realizada por Dê Fernando - foto 17" loading="lazy">
+            </a>
+          </div>
+        </article>
+
+        <article class="tab-panel" id="tab-pagina" aria-labelledby="pagina">
+          <div class="section-header">
+            <p class="section-kicker">Desenvolvimento</p>
+            <h2 class="section-title">Sobre a página</h2>
+          </div>
+
+          <div class="content-card">
+            <p>
+              Essa página foi desenvolvida por <strong>Prisley Henrique 🤓</strong>, com foco em
+              performance visual, experiência do usuário e apresentação profissional do portfólio.
+            </p>
+
+            <p>
+              O objetivo do projeto é transformar um link de apresentação em uma peça digital mais
+              estratégica: visualmente forte, fácil de navegar e capaz de transmitir mais valor logo
+              no primeiro acesso.
+            </p>
+
+            <p>
+              Estou aberto a novos projetos, melhorias e colaborações. Para desenvolvimento de páginas,
+              sistemas e experiências personalizadas, entre em
+              <a
+                href="https://wa.me/5531973426802?text=Olá!"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-link"
+              >
+                contato comigo
+              </a>.
+            </p>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <script src="./src/js/jQuery.js"></script>
+  <script src="./src/js/lightbox.js"></script>
+  <script src="./src/js/index.js"></script>
+  <script>
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: true,
+      albumLabel: "Imagem %1 de %2",
+      fadeDuration: 200,
+      imageFadeDuration: 200
+    });
+  </script>
+</body>
+</html>

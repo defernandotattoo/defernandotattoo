@@ -1,51 +1,44 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const primeiraAba = document.getElementById("minhas-redes");
-  selecionarAba(primeiraAba);
-  mostrarInformacoesDaAba(primeiraAba);
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabPanels = document.querySelectorAll(".tab-panel");
 
-const abas = document.querySelectorAll(".aba");
+  if (!tabButtons.length || !tabPanels.length) return;
 
-abas.forEach(aba => {
-  aba.addEventListener("click", function() {
-    if (aba.classList.contains("selecionado")) {
-      return;
-    }
+  function activateTab(targetTab) {
+    tabButtons.forEach((button) => {
+      const isActive = button.dataset.tab === targetTab;
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-selected", isActive);
+    });
 
-    selecionarAba(aba);
-    mostrarInformacoesDaAba(aba);
+    tabPanels.forEach((panel) => {
+      const isActive = panel.id === `tab-${targetTab}`;
+      panel.classList.toggle("active", isActive);
+      panel.hidden = !isActive;
+    });
+  }
+
+  tabButtons.forEach((button) => {
+    button.setAttribute("aria-selected", button.classList.contains("active"));
+
+    button.addEventListener("click", () => {
+      const targetTab = button.dataset.tab;
+      activateTab(targetTab);
+    });
+
+    button.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        const targetTab = button.dataset.tab;
+        activateTab(targetTab);
+      }
+    });
   });
+
+  const initialActiveButton =
+    document.querySelector(".tab-button.active") || tabButtons[0];
+
+  if (initialActiveButton) {
+    activateTab(initialActiveButton.dataset.tab);
+  }
 });
-
-function selecionarAba(aba) {
-    const abaSelecionada = document.querySelector(".aba.selecionado");
-    abaSelecionada.classList.remove("selecionado");
-
-    aba.classList.add("selecionado");
-}
-
-function mostrarInformacoesDaAba(aba){
-    const informacaoSelecionada = document.querySelector(".informacao.selecionado");
-    informacaoSelecionada.classList.remove("selecionado");
-
-    const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`
-
-    const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba)
-    informacaoASerMostrada.classList.add("selecionado")
-}
-
-const imagens = document.querySelectorAll('.galeria-lightbox img');
-const imagemAmpliada = document.querySelector('.imagem-ampliada');
-const imagemAmpliadaImg = document.querySelector('.imagem-ampliada img');
-
-imagens.forEach(imagem => {
-  imagem.addEventListener('click', () => {
-    const caminhoImagem = imagem.getAttribute('src');
-    mostrarImagemAmpliada(caminhoImagem);
-  });
-});
-
-function mostrarImagemAmpliada(caminhoImagem) {
-  imagemAmpliadaImg.setAttribute('src', caminhoImagem);
-  imagemAmpliada.style.display = 'flex';
-}
